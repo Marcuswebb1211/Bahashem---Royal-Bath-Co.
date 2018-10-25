@@ -41,7 +41,7 @@ header {
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid red; */
-    background-image: url('img/golden-background-5.svg');
+    background-image: url('../img/golden-background-5.svg');
     background-position: center;
     background-size: cover;
 }
@@ -119,7 +119,7 @@ figcaption h3 {
     left: 0;
     background-color: rgb(245, 245, 245);
     background-color: #fff;
-    background-image: url('img/golden-background-5.svg');
+    background-image: url('../img/golden-background-5.svg');
     background-position: center;
     background-size: cover;
 
@@ -227,7 +227,7 @@ figcaption h3 {
 .icons:hover {
     background-color: #ffcf40;
     color: #fff;
-    background-image: url('img/golden-background-5.svg');
+    background-image: url('../img/golden-background-5.svg');
     background-position: center;
     background-size: contain;
 }
