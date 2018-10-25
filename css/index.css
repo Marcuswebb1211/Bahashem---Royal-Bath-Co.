@@ -1,0 +1,268 @@
+/*  IMPORTS   */
+
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Bree+Serif');
+
+
+/*******************************************************
+    MOBILE LAYOUT
+*******************************************************/
+
+/*  OVERRIDES   */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centered {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/*  BASE STYLES   */
+
+header {
+    padding: 0 15px;
+    display: flex;
+    height: 10vh;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    background-image: url('../img/golden-background-5.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: none;
+    height: 8vh;
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    color: #3659a2;
+    font-family: 'Charmonman', cursive;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 7vh;
+    background-color: #3659a2;
+    /* background-color: rgb(177, 175, 87); */
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+figcaption h3 {
+    text-decoration: underline;
+}
+
+/*  COMPONENTS   */
+
+.main-content {
+    padding-top: 8px;
+    height: 83vh;
+    overflow: auto;
+    background-color: rgb(248, 244, 248);
+    /* background-color: rgb(187, 185, 59); */
+    
+}
+
+.menu-on, .menu-off {
+    border: 0px;
+    background-color: transparent;
+    font-size: inherit;
+}
+
+.fa-bars, .fa-times {
+    color: #3659a2;
+    cursor: pointer;
+}
+
+.logo {
+    margin-right: 100px;
+    /* margin: 10px 0; */
+    color:  #ffcf40;
+    /* border: 2px solid rgb(221, 219, 120); */
+    /* padding: 5px 15px; */
+    /* border-radius: 7px; */
+    font-family: 'Charmonman', cursive;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    height: 93vh;
+    border-right: 3vw solid #3659a2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(245, 245, 245);
+    background-color: #fff;
+    background-image: url('../img/golden-background-5.svg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.modal header {
+    /* background-color: rgb(245, 245, 245); */
+}
+
+.modal .logo {
+    margin-right: 60.5px;
+    background-color: rgb(245, 245, 245);
+}
+
+.menu {
+    margin-top: 100px;
+    padding: 5px 15px;
+    border-top: 2px solid #ffcf40;
+    border-bottom: 2px solid #ffcf40;
+}
+
+.menu li {
+    padding: 10px;
+    display: flex;
+    font-size: 1.5em;
+    color: #3659a2;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #fff;
+}
+
+.menu i {
+    color: #ffcf40;
+}
+
+.menu p {
+    margin-left: 15px;
+    font-weight: bold;
+    font-family: 'Alegreya', serif;
+}
+
+.fas {
+    font-size: 1.2em;
+}
+
+.navigation-bar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navigation-bar a:hover {
+    color: rgb(211, 76, 238);
+}
+
+.cards {
+    display: flex;
+    height: 32vh;
+    background-color: #fff;
+    margin-bottom: 8px;
+    font-family: 'Alegreya', serif;
+}
+
+
+.cards img {
+    height: 100%;
+}
+
+.view {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 10px 15px;
+    background-color: #3659a2;
+    border-radius: 4px;
+     color: #fff;
+    text-decoration: none;
+}
+
+.view:hover {
+    background-color: #446bbe;
+    color: #ffcf40;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #0c2453;
+    font-size: 1em;
+    width: 40%;
+}
+
+.icons {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin: 0 5px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons:hover {
+    background-color: #ffcf40;
+    color: #fff;
+    background-image: url('../img/golden-background-5.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+
+/*  MEDIA QUERIES   */
+  
+    @media only screen and (min-width: 768px) {
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .cards {
+            margin: 5px 2px;
+            width: 49%;
+            height: 50%;
+        }
+    }
+
+
+  @media only screen and (max-width: 356px) {
+    /* Small phones */
+
+    .cards {
+        height: 30vh;
+    }
+
+    .cards img {
+        width: 55%;
+    }
+
+  }
+  
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+  }
